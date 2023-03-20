@@ -16,7 +16,7 @@ The blaster is aimed using an MLX90640 infrared camera. This camera is connected
 
 Below is a picture of the completed dart blaster.
 
-![Completed blaster](blaster.jpeg)
+![Completed blaster](turret.jpeg)
 
 Below is the wiring diagram of the completed system.
 
@@ -32,7 +32,7 @@ link
 
 In the initial iteration (with the camera mounted directly on the blaster), the turret was fairly accurate up to 12 feet, with some success as far as 15 feet. Tests were performed by running the duel program and then standing in a spot in front of the turret at varying positions. To assist in analyzing the aiming algorithm, the camera image was printed into the terminal for use with an external python script to show what the camera saw and where the turret decided to aim. Below is a video of one such test in action.
 
-<video src='blaster_test.mov' width=180/>
+![Turret test](blaster_test.mov)
 
 The same general process was used in the second iteration, where the camera was moved to an external mount. With the positions calibrated, the turret was fairly accurate, hitting the duel target 2 out of 3 times. However, when the camera and turret were moved to an uncalibrated position, it missed both shots, but with a fairly consistent angle error. This suggests that, when calibrated or corrected, the accuracy of the turret should increase.
 
