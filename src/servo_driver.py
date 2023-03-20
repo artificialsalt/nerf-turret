@@ -3,7 +3,7 @@
 This file contains a class that allows the user to instantiate a servo driver.
 
 @author Chayton Ritter, Richard Kwan, Jackie Chen
-@date 24-Jan-2023
+@date 9-Mar-2023
 '''
 
 # Import pyboard module
@@ -41,7 +41,7 @@ class ServoDriver:
         Sets the servo position based on the PWM level.
         @param level PWM duty cycle to move the servo. Given as integer from -90 to 90 (inclusive). Overall range may vary depending on servo model.
         '''
-        
+
         duty = (position - (-90)) * (10 - 5) / (90 - (-90)) + 5
 
         self.pwm.pulse_width_percent(duty)
