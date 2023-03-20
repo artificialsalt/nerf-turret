@@ -20,7 +20,7 @@ video/picture
 
 Below is the wiring diagram of the completed system.
 
-wiring diagram
+![Turret wiring diagram](405nt_wiring_diagram.png)
 
 ## Software Design
 
