@@ -16,7 +16,7 @@ The blaster is aimed using an MLX90640 infrared camera. This camera is connected
 
 Below is a picture of the completed dart blaster.
 
-![Completed blaster](turret.jpeg)
+![Completed blaster](turret.jpg)
 
 Below is the wiring diagram of the completed system.
 
