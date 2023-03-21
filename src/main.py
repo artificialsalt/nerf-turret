@@ -209,8 +209,6 @@ S2_AIM = 2
 S3_ADJUST = 3
 S4_SHOOT = 4
 S5_SAFE = 5
-S6_AIM2 = 6
-S7_ADJUST2 = 7
 
 # ------------------------------------
 # ACTUAL PROGRAM

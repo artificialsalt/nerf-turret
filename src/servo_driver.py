@@ -34,12 +34,15 @@ class ServoDriver:
         self.pwm = self.timer.channel(ch, pyb.Timer.PWM, pin=self.pwm_pin)  
 
     def return_to_zero(self):
+        '''!
+        Returns the servo to the zero position.
+        '''
         self.set_position(0)
 
     def set_position (self, position:int):
         '''!
         Sets the servo position based on the PWM level.
-        @param level PWM duty cycle to move the servo. Given as integer from -90 to 90 (inclusive). Overall range may vary depending on servo model.
+        @param position Degree angle to move the servo. Given as integer from -90 to 90 (inclusive). Overall range may vary depending on servo model.
         '''
 
         duty = (position - (-90)) * (10 - 5) / (90 - (-90)) + 5
