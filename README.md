@@ -6,7 +6,7 @@ The main program is designed such that the turret operates in the style of a due
 
 ## Hardware Design
 
-The software in this repository interfaces with a flywheel dart blaster mounted on a two-axis turret platform. The two axes are each driven by a brushed DC motor, both of which are driven by an H-bridge motor controller shield on a microcontroller. Both axes are belt-driven.
+The software in this repository interfaces with a flywheel dart blaster mounted on a two-axis turret platform. The two axes are each driven by a brushed DC motor, both of which are driven by an H-bridge motor controller shield on a microcontroller. Both axes are belt-driven. The horizontal axis was constructed using a 12 inch diameter lazy susan, with the outer ring of the lazy susan being stationary. In order to rotate the inner ring, a GT2 timing belt was wrapped around the outer ring and around the 20T pulley of the horizontal drive motor. When the pulley turns, it moves along the belt and rotates the entire assembly. The vertical axis was constructed by placing two 3d-printed bearing blocks on top of two vertical pieces of wood, and then placing a wooden dowel into the bearing blocks. The blaster was fixed to the dowel using a 3d-printed mount. The vertical axis was actuated using standard GT2 20T pulley and a 3d printed 60T pulley.
 
 The flywheels are enabled by an output pin on the microcontroller via a relay. The microcontroller output pin is connected to the base of an NPN bipolar junction transistor, whose collector is connected to the coil of the relay. When the output pin is set high, current flows through the coil and closes the switch, powering the flywheels. The relay is powered by a 5V buck converter that steps down the 12V from the power supply.
 
