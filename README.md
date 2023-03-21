@@ -1,6 +1,6 @@
 # nerf-turret
 
-This repository contains code to actuate a nerf gun turret that uses an infrared camera to aim at a target. This was created as part of a final project for an ME 405 class.
+This repository contains code to actuate a nerf gun turret that uses an infrared camera to aim at a target. This software can be used as a basis for those creating their own infrared-aiming nerf blaster turret. This was created as part of a final project for an ME 405 class. 
 
 The main program is designed such that the turret operates in the style of a duel, in which it starts facing away from a target before spinning 180 degrees and then shooting the target.
 
@@ -24,9 +24,11 @@ Below is the wiring diagram of the completed system.
 
 ## Software Design
 
-The included software consists of the libraries required for all devices/peripherals, as well as the main duel program. The documentation of the source files can be viewed here:
+The software for this dueling blaster turret was implemented as a finite state machine. The states reflect the individual phases that the turret will enter during a duel. These states incude turning around, detecting a target, aiming for a target, and shooting. Although one of the design objectives for this project was to implement task-sharing, the disparity of the execution time between the tasks as well as their nature made it impractical to do any real task-sharing. The two-axis motor control is the only "simultaneous" task execution.
 
-link
+For more detail on the software, including tasks and states, please go to the documentation linked below:
+
+https://artificialsalt.github.io/nerf-turret/
 
 ## Results
 
